@@ -1,9 +1,16 @@
 package student_player;
 
+import Saboteur.SaboteurMove;
+import Saboteur.cardClasses.SaboteurCard;
+import Saboteur.cardClasses.SaboteurMap;
+import Saboteur.cardClasses.SaboteurTile;
 import boardgame.Move;
 
 import Saboteur.SaboteurPlayer;
 import Saboteur.SaboteurBoardState;
+import javafx.util.Pair;
+
+import java.util.ArrayList;
 
 /** A player file submitted by a student. */
 public class StudentPlayer extends SaboteurPlayer {
@@ -14,7 +21,7 @@ public class StudentPlayer extends SaboteurPlayer {
      * associate you with your agent. The constructor should do nothing else.
      */
     public StudentPlayer() {
-        super("xxxxxxxxx");
+        super("260713804");
     }
 
     /**
@@ -26,12 +33,35 @@ public class StudentPlayer extends SaboteurPlayer {
         // You probably will make separate functions in MyTools.
         // For example, maybe you'll need to load some pre-processed best opening
         // strategies...
-        MyTools.getSomething();
+//        SaboteurBoardState bS_copy = (SaboteurBoardState) boardState.clone();
+        ArrayList<SaboteurMove> legal_moves = boardState.getAllLegalMoves();
+        SaboteurTile[][] currentTiles = boardState.getHiddenBoard();
+        ArrayList<SaboteurCard> hand = boardState.getCurrentPlayerCards();
+
+
+
+        Pair<Integer,Integer> target1;
+        target1 = MyTools.selectTarget(boardState);
+        target1=  MyTools.setTargetWithNugget(boardState,target1);
+        SaboteurMove mapMove = new SaboteurMove(new SaboteurMap(),target1.getKey(),target1.getValue(),player_id);
+        if(MyTools.doMapMove(boardState,mapMove)){
+            return mapMove;
+        }
+
+
+        return MyTools.selectTile(boardState,target1,player_id);
+
+
+
+//        int[][] val = boardState.getHiddenIntBoard();
+//        boardState.printBoard();
+//        System.out.println(val.toString());
+//        MyTools.getSomething();
 
         // Is random the best you can do?
-        Move myMove = boardState.getRandomMove();
+//        Move myMove = boardState.getRandomMove();
 
         // Return your move to be processed by the server.
-        return myMove;
+//        return myMove;
     }
 }
