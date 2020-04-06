@@ -48,6 +48,7 @@ public class StudentPlayer extends SaboteurPlayer {
             return mapMove;
         }
 
+        MyTools.A_star_search(boardState,target1);
 
         return MyTools.selectTile(boardState,target1,player_id);
 
