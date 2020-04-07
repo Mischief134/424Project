@@ -37,25 +37,25 @@ public class StudentPlayer extends SaboteurPlayer {
         ArrayList<SaboteurMove> legal_moves = boardState.getAllLegalMoves();
         SaboteurTile[][] currentTiles = boardState.getHiddenBoard();
         ArrayList<SaboteurCard> hand = boardState.getCurrentPlayerCards();
-
+        int[][] val = boardState.getHiddenIntBoard();
 
 
         Pair<Integer,Integer> target1;
         target1 = MyTools.selectTarget(boardState);
         target1=  MyTools.setTargetWithNugget(boardState,target1);
         SaboteurMove mapMove = new SaboteurMove(new SaboteurMap(),target1.getKey(),target1.getValue(),player_id);
-        if(MyTools.doMapMove(boardState,mapMove)){
-            return mapMove;
-        }
+//        if(MyTools.doMapMove(boardState,mapMove)){
+//            return mapMove;
+//        }
 
         MyTools.A_star_search(boardState,target1);
-
+        boardState.printBoard();
         return MyTools.selectTile(boardState,target1,player_id);
 
 
 
-//        int[][] val = boardState.getHiddenIntBoard();
-//        boardState.printBoard();
+
+
 //        System.out.println(val.toString());
 //        MyTools.getSomething();
 

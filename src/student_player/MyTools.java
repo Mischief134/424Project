@@ -98,6 +98,10 @@ public class MyTools {
 //                board.processMove(mapMove);
                 val = true;
             }
+            if (card instanceof SaboteurMap){
+//                board.processMove(mapMove);
+                val = true;
+            }
             if(val){
                 SaboteurMove move = new SaboteurMove(new SaboteurDrop(),hand.indexOf(card),0,player_id);
                 return move;

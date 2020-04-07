@@ -921,6 +921,22 @@ public class SaboteurBoardState extends BoardState {
         }
         return boardString.toString();
     }
+//    public String toString() {
+//        this.getIntBoard();
+//        StringBuilder boardString = new StringBuilder();
+//        for (int i = 0; i < BOARD_SIZE*3; i++) {
+//            boardString.append("{");
+//            for (int j = 0; j < BOARD_SIZE*3; j++) {
+//                boardString.append(intBoard[i][j]);
+//                if(j<BOARD_SIZE*3-1){
+//                    boardString.append(",");
+//                }
+//
+//            }
+//            boardString.append("},\n");
+//        }
+//        return boardString.toString();
+//    }
 
     public static void main(String[] args) {
         SaboteurBoardState pbs = new SaboteurBoardState();
