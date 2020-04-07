@@ -7,6 +7,7 @@ import javafx.util.Pair;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Random;
 
 public class MyTools {
@@ -197,9 +198,98 @@ public class MyTools {
 
     }
 
-    public static void A_star_search(SaboteurBoardState board, Pair<Integer,Integer> target){
+    public static int[][] convertBoard(int [][]intBoard){
+        int[][] copyBoard = new int[intBoard.length][intBoard[0].length];
+        for(int i=0; i<intBoard.length;i++){
+            for(int j =0; j<intBoard[i].length;j++){
+                if(intBoard[i][j] == -1 ){
+                    copyBoard[i][j] = 1;
+
+                }
+                else if(intBoard[i][j] == 1){
+                    copyBoard[i][j] = 0;
+                }
+                else if(intBoard[i][j] == 0){
+                    copyBoard[i][j] = -1;
+                }
+            }
+        }
+
+        for(int i=0; i<intBoard.length;i=i+2){
+            for(int j =0; j<intBoard[i].length;j=j+2){
+                if(copyBoard[i][j] == 1 ){
+                    copyBoard[i][j] = -1;
+
+                }
+
+            }
+        }
+        return copyBoard;
+
+    }
+//    public static boolean containss(ArrayList<SaboteurMove> legal_moves,ArrayList<SaboteurCard> hand ){
+//        for(int i=0; i<legal_moves.size();i++) {
+//            for (int j = 0; j < hand.size(); j++) {
+//                if(legal_moves)
+//            }
+//        }
+//
+//
+//
+//    }
+
+    public static SaboteurMove doMove(SaboteurBoardState board,Pair<Integer,Integer> target,int player_id){
+        ArrayList<SaboteurMove> legal_moves = board.getAllLegalMoves();
+        ArrayList<SaboteurCard> hand = board.getCurrentPlayerCards();
+
+        ArrayList<SaboteurMove> listOfMoves = A_star_search(board,target,player_id);
+
+        for(int i = 0 ;i <listOfMoves.size(); i++) {
+            for(int j = 0; j<legal_moves.size();j++){
+                if(legal_moves.get(j).getCardPlayed().getName().equals(listOfMoves.get(i).getCardPlayed().getName())){
+
+                    return listOfMoves.get(i);
+                }
+            }
+
+
+        }
+        return dropUnusedCard(board,player_id);
+
+    }
+
+    public static ArrayList<SaboteurMove> A_star_search(SaboteurBoardState board, Pair<Integer,Integer> target,int player_id){
         int[] target_int = new int[]{target.getKey()*3+1,target.getValue()*3+1};
         int[][] intBoard = board.getHiddenIntBoard();
+//        ArrayList<SaboteurMove> legal_moves = board.getAllLegalMoves();
+//        ArrayList<SaboteurCard> hand = board.getCurrentPlayerCards();
+        AStar as = new AStar(intBoard, 16, 16, false);
+
+        List<AStar.Node> new_path = as.findPathTo(target_int[0], target_int[1]);
+        new_path.remove(0);
+        new_path.remove(0);
+        new_path.remove(new_path.size()-1);
+        new_path.remove(new_path.size()-1);
+
+        ArrayList<SaboteurMove> moves= new ArrayList<SaboteurMove>();
+
+        for(int i = 0 ; i<new_path.size();i=i+3) {
+//            for(int j = 0 ; j<3; j++){
+////
+////            }
+            AStar.Node first = new_path.get(i);
+            AStar.Node second = new_path.get(i + 1);
+            AStar.Node third = new_path.get(i + 2);
+
+            if (first.x == second.x && second.x == third.x) {
+                SaboteurMove move = new SaboteurMove(new SaboteurTile("0"), second.x, second.y, player_id);
+                moves.add(move);
+            }
+        }
+
+        return moves;
+
+
 
 
 

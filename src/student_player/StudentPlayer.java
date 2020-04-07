@@ -48,9 +48,12 @@ public class StudentPlayer extends SaboteurPlayer {
 //            return mapMove;
 //        }
 
-        MyTools.A_star_search(boardState,target1);
+//        int[][] arr = new int[][]{{0,0,0},{1,1,1},{0,0,0}};
+        int[][] value = MyTools.convertBoard(val);
         boardState.printBoard();
-        return MyTools.selectTile(boardState,target1,player_id);
+//        return MyTools.A_star_search(boardState,target1,player_id);
+
+         return MyTools.selectTile(boardState,target1,player_id);
 
 
 
