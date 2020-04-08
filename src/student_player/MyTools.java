@@ -110,10 +110,6 @@ public class MyTools {
 
         }
         return null;
-
-
-
-
     }
 
     private static double calcDistance(int[] pos, Pair<Integer,Integer> target){
@@ -166,10 +162,7 @@ public class MyTools {
             dropUnusedCard(board,player_id);
 //            return board.getRandomMove();
         }
-
         return movee;
-
-
     }
 
     public static SaboteurMove selectTile(SaboteurBoardState board,Pair<Integer,Integer> target,int player_id){
@@ -188,14 +181,11 @@ public class MyTools {
 //                assert currentMove != null;
                 prev_distance = distance;
             }
-
-
         }
         if(currentMove == null){
             System.out.println("GOTVEREN");
         }
         return currentMove;
-
     }
 
     public static int[][] convertBoard(int [][]intBoard){
@@ -225,18 +215,7 @@ public class MyTools {
             }
         }
         return copyBoard;
-
     }
-//    public static boolean containss(ArrayList<SaboteurMove> legal_moves,ArrayList<SaboteurCard> hand ){
-//        for(int i=0; i<legal_moves.size();i++) {
-//            for (int j = 0; j < hand.size(); j++) {
-//                if(legal_moves)
-//            }
-//        }
-//
-//
-//
-//    }
 
     public static SaboteurMove doMove(SaboteurBoardState board,Pair<Integer,Integer> target,int player_id){
         ArrayList<SaboteurMove> legal_moves = board.getAllLegalMoves();
@@ -245,17 +224,14 @@ public class MyTools {
         ArrayList<SaboteurMove> listOfMoves = A_star_search(board,target,player_id);
 
         for(int i = 0 ;i <listOfMoves.size(); i++) {
-            for(int j = 0; j<legal_moves.size();j++){
+            for(int j = 0; j<legal_moves.size();j++) {
                 if(legal_moves.get(j).getCardPlayed().getName().equals(listOfMoves.get(i).getCardPlayed().getName())){
 
                     return listOfMoves.get(i);
                 }
             }
-
-
         }
         return dropUnusedCard(board,player_id);
-
     }
 
     public static ArrayList<SaboteurMove> A_star_search(SaboteurBoardState board, Pair<Integer,Integer> target,int player_id){
@@ -274,9 +250,6 @@ public class MyTools {
         ArrayList<SaboteurMove> moves= new ArrayList<SaboteurMove>();
 
         for(int i = 0 ; i<new_path.size();i=i+3) {
-//            for(int j = 0 ; j<3; j++){
-////
-////            }
             AStar.Node first = new_path.get(i);
             AStar.Node second = new_path.get(i + 1);
             AStar.Node third = new_path.get(i + 2);
@@ -285,20 +258,32 @@ public class MyTools {
                 SaboteurMove move = new SaboteurMove(new SaboteurTile("0"), second.x, second.y, player_id);
                 moves.add(move);
             }
+            if(first.y == second.y && second.y == third.y) {
+                SaboteurMove move = new SaboteurMove(new SaboteurTile("10"), second.x, second.y, player_id);
+                moves.add(move);
+            }
+            if((first.x == second.x - 1 && third.y == second.y + 1) ||
+                    (first.y == second.y + 1 && third.x == second.x - 1)) {
+                SaboteurMove move = new SaboteurMove(new SaboteurTile("5_flip"), second.x, second.y, player_id);
+                moves.add(move);
+            }
+            if((first.x == second.x + 1 && second.y == third.y - 1) ||
+                    (first.y == second.y + 1 && second.x == third.x - 1)) {
+                SaboteurMove move = new SaboteurMove(new SaboteurTile("7"), second.x, second.y, player_id);
+                moves.add(move);
+            }
+            if((first.x == second.x - 1 && second.y == third.y + 1) ||
+                    (first.y == second.y - 1 && second.x == third.x + 1)) {
+                SaboteurMove move = new SaboteurMove(new SaboteurTile("7_flip"), second.x, second.y, player_id);
+                moves.add(move);
+            }
+            if((first.x == second.x + 1 && second.y == third.y + 1) ||
+                    (first.y == second.y - 1 && second.x == third.x - 1)) {
+                SaboteurMove move = new SaboteurMove(new SaboteurTile("5"), second.x, second.y, player_id);
+                moves.add(move);
+            }
+
         }
-
         return moves;
-
-
-
-
-
-
-
-
-//37,16
     }
-
-
-
 }

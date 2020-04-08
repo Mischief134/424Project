@@ -60,7 +60,9 @@ class AStar {
         this.xend = xend;
         this.yend = yend;
         this.closed.add(this.now);
-        addNeigborsToOpenList();
+        addNeighborsToOpenList();
+
+        // while not at the end
         while (this.now.x != this.xend || this.now.y != this.yend) {
             if (this.open.isEmpty()) { // Nothing to examine
                 return null;
@@ -68,7 +70,7 @@ class AStar {
             this.now = this.open.get(0); // get first node (lowest f score)
             this.open.remove(0); // remove it
             this.closed.add(this.now); // and add to the closed
-            addNeigborsToOpenList();
+            addNeighborsToOpenList();
         }
         this.path.add(0, this.now);
         while (this.now.x != this.xstart || this.now.y != this.ystart) {
@@ -97,7 +99,7 @@ class AStar {
             return Math.abs(this.now.x + dx - this.xend) + Math.abs(this.now.y + dy - this.yend); // else return "Manhattan distance"
         }
     }
-    private void addNeigborsToOpenList() {
+    private void addNeighborsToOpenList() {
         Node node;
         for (int x = -1; x <= 1; x++) {
             for (int y = -1; y <= 1; y++) {
