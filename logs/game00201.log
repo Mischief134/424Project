@@ -1,0 +1,28 @@
+# Server version 0.08 running on nuris-mbp:8123
+# Game ID: 201
+# Board class: Saboteur.SaboteurBoard
+# Timeout: 20000
+# First Move Timeout: 30000
+# Date: Tue Apr 07 18:44:56 EDT 2020
+# Player 1: Player-0, '260713804', running on nuris-mbp
+# Player 2: Player-1, 'RandomPlayer', running on nuris-mbp
+START Player-0 260713804
+START Player-1 RandomPlayer
+BoardInit:Tile:0,Tile:3,Tile:8,Destroy,Map,Map,Destroy,Tile:5,Tile:6,Tile:8,Tile:1,Tile:6,Tile:9,Tile:0,Tile:13,Tile:7,Tile:7,Map,Tile:7,Tile:0,Bonus,Tile:9,Map,Bonus,Tile:2,Tile:8,Tile:4,Tile:0,Bonus,Tile:6,Tile:5,Tile:10,Tile:6,Tile:5,Map,Tile:11,Tile:8,Tile:8,Tile:10,Bonus,Destroy-Tile:12,Tile:10,Tile:7,Tile:9,Malus,Tile:15,Malus-Tile:6,Tile:5,Tile:14,Map,Tile:9,Tile:9,Tile:7-Tile:nugget,Tile:hidden2,Tile:hidden1
+Drop 2 0 1
+Tile:9_flip 5 4 0
+Tile:9 4 5 1
+Drop 0 0 0
+Tile:15 5 6 1
+Drop 0 0 0
+Drop 6 0 1
+Drop 0 0 0
+Drop 3 0 1
+Drop 0 0 0
+Tile:10 4 6 1
+Drop 0 0 0
+Drop 0 0 1
+Drop 0 0 0
+Tile:8 5 3 1
+GAMEOVER ILLEGAL MOVE: Player 0, CardUsed: (Tile:0), PosOfUse: (21, 14) WINNER 1
+# Game ended: Tue Apr 07 18:44:56 EDT 2020

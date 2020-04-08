@@ -50,10 +50,33 @@ public class StudentPlayer extends SaboteurPlayer {
 
 //        int[][] arr = new int[][]{{0,0,0},{1,1,1},{0,0,0}};
         int[][] value = MyTools.convertBoard(val);
-        boardState.printBoard();
-//        return MyTools.A_star_search(boardState,target1,player_id);
 
-         return MyTools.selectTile(boardState,target1,player_id);
+
+//
+//        StringBuilder boardString = new StringBuilder();
+//        for (int i = 0; i < 14*3; i++) {
+//            boardString.append("{");
+//            for (int j = 0; j < 14*3; j++) {
+//                boardString.append(value[i][j]);
+//                if(j<14*3-1){
+//                    boardString.append(",");
+//                }
+//
+//            }
+//            boardString.append("},\n");
+//        }
+//
+//        System.out.println(boardString.toString());
+
+
+//     boardState.printBoard();
+        SaboteurMove x =MyTools.doMove(boardState,target1,player_id);
+        if(x == null){
+            return boardState.getRandomMove();
+        }
+        return MyTools.doMove(boardState,target1,player_id);
+
+        // return MyTools.selectTile(boardState,target1,player_id);
 
 
 

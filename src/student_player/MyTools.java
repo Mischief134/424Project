@@ -49,8 +49,6 @@ public class MyTools {
 
 
 
-
-
             }
         }
         return target;
@@ -81,7 +79,7 @@ public class MyTools {
     public static SaboteurMove dropUnusedCard(SaboteurBoardState board, int player_id){
         ArrayList<String> droppable = new ArrayList<String>(Arrays.asList("Tile:1","Tile:2","Tile:3","Tile:4","Tile:2_flip",
                 "Tile:3_flip","Tile:4_flip","Tile:11","Tile:11_flip","Tile:12","Tile:12_flip","Tile:13",
-                "Tile:14","Tile:14_flip","Tile:15","Tile:0","Tile:9","Tile:9_flip","Tile:6","Tile:6_flip","Tile:5","Tile:5_flip","Tile:7","Tile:7_flip","Tile:10"));
+                "Tile:14","Tile:14_flip","Tile:15"));
         int index = getRandomNumberInRange(0,droppable.size()-1);
         ArrayList<SaboteurCard> hand = board.getCurrentPlayerCards();
         for(SaboteurCard card : hand){
@@ -119,74 +117,74 @@ public class MyTools {
 
     }
 
-    public static SaboteurMove chooseTile(SaboteurMove leg_move, SaboteurBoardState board,Pair<Integer,Integer> target, ArrayList<SaboteurCard> hand,int player_id){
-
-        if(leg_move == null){
-            System.out.println("GOTVEREN");
-        }
-        int[] pos = leg_move.getPosPlayed();
-
-        for(SaboteurCard card : hand) {
-            boolean x = (card  == leg_move.getCardPlayed());
-            boolean y = card.getName().contains("8");
-            if (card.getName().contains(leg_move.getCardPlayed().getName())&& card.getName().contains("8")) {
-                SaboteurMove move = new SaboteurMove(new SaboteurTile("8"), pos[0], pos[1], player_id);
-                if(move == null){
-                    System.out.println("GOTVEREN");
-                }
-                return move;
-            }
-        }
+//    public static SaboteurMove chooseTile(SaboteurMove leg_move, SaboteurBoardState board,Pair<Integer,Integer> target, ArrayList<SaboteurCard> hand,int player_id){
+//
+//        if(leg_move == null){
+//            System.out.println("GOTVEREN");
+//        }
+//        int[] pos = leg_move.getPosPlayed();
+//
 //        for(SaboteurCard card : hand) {
 //            boolean x = (card  == leg_move.getCardPlayed());
-//            boolean y = card.getName().contains("0");
-//            if (card.getName().contains(leg_move.getCardPlayed().getName()) && card.getName().contains("0")) {
-//                SaboteurMove move = new SaboteurMove(new SaboteurTile("0"), pos[0], pos[1], player_id);
+//            boolean y = card.getName().contains("8");
+//            if (card.getName().contains(leg_move.getCardPlayed().getName())&& card.getName().contains("8")) {
+//                SaboteurMove move = new SaboteurMove(new SaboteurTile("8"), pos[0], pos[1], player_id);
 //                if(move == null){
 //                    System.out.println("GOTVEREN");
 //                }
 //                return move;
 //            }
 //        }
-//        for(SaboteurCard card : hand) {
-//            if (card.getName().contains(leg_move.getCardPlayed().getName()) && card.getName().contains("10")) {
-//                SaboteurMove move = new SaboteurMove(new SaboteurTile("10"), pos[0], pos[1], player_id);
-//                if(move == null){
-//                    System.out.println("GOTVEREN");
-//                }
-//                return move;
+////        for(SaboteurCard card : hand) {
+////            boolean x = (card  == leg_move.getCardPlayed());
+////            boolean y = card.getName().contains("0");
+////            if (card.getName().contains(leg_move.getCardPlayed().getName()) && card.getName().contains("0")) {
+////                SaboteurMove move = new SaboteurMove(new SaboteurTile("0"), pos[0], pos[1], player_id);
+////                if(move == null){
+////                    System.out.println("GOTVEREN");
+////                }
+////                return move;
+////            }
+////        }
+////        for(SaboteurCard card : hand) {
+////            if (card.getName().contains(leg_move.getCardPlayed().getName()) && card.getName().contains("10")) {
+////                SaboteurMove move = new SaboteurMove(new SaboteurTile("10"), pos[0], pos[1], player_id);
+////                if(move == null){
+////                    System.out.println("GOTVEREN");
+////                }
+////                return move;
+////            }
+////        }
+//        SaboteurMove movee = dropUnusedCard(board,player_id);
+//        if( movee == null){
+//            dropUnusedCard(board,player_id);
+////            return board.getRandomMove();
+//        }
+//        return movee;
+//    }
+
+//    public static SaboteurMove selectTile(SaboteurBoardState board,Pair<Integer,Integer> target,int player_id){
+//        ArrayList<SaboteurMove> legal_moves = board.getAllLegalMoves();
+//
+//        legal_moves.get(0).getPosPlayed();
+//        double prev_distance = 9999999;
+//        ArrayList<SaboteurCard> hand = board.getCurrentPlayerCards();
+//        SaboteurMove currentMove = null;
+//        for(int i = 0 ;i <legal_moves.size(); i++){
+//            int[] pos = legal_moves.get(i).getPosPlayed();
+//            double distance = calcDistance(pos,target);
+//
+//            if(distance < prev_distance){
+//                currentMove = chooseTile(legal_moves.get(i),board,target,hand,player_id);
+////                assert currentMove != null;
+//                prev_distance = distance;
 //            }
 //        }
-        SaboteurMove movee = dropUnusedCard(board,player_id);
-        if( movee == null){
-            dropUnusedCard(board,player_id);
-//            return board.getRandomMove();
-        }
-        return movee;
-    }
-
-    public static SaboteurMove selectTile(SaboteurBoardState board,Pair<Integer,Integer> target,int player_id){
-        ArrayList<SaboteurMove> legal_moves = board.getAllLegalMoves();
-
-        legal_moves.get(0).getPosPlayed();
-        double prev_distance = 9999999;
-        ArrayList<SaboteurCard> hand = board.getCurrentPlayerCards();
-        SaboteurMove currentMove = null;
-        for(int i = 0 ;i <legal_moves.size(); i++){
-            int[] pos = legal_moves.get(i).getPosPlayed();
-            double distance = calcDistance(pos,target);
-
-            if(distance < prev_distance){
-                currentMove = chooseTile(legal_moves.get(i),board,target,hand,player_id);
-//                assert currentMove != null;
-                prev_distance = distance;
-            }
-        }
-        if(currentMove == null){
-            System.out.println("GOTVEREN");
-        }
-        return currentMove;
-    }
+//        if(currentMove == null){
+//            System.out.println("GOTVEREN");
+//        }
+//        return currentMove;
+//    }
 
     public static int[][] convertBoard(int [][]intBoard){
         int[][] copyBoard = new int[intBoard.length][intBoard[0].length];
@@ -206,26 +204,45 @@ public class MyTools {
         }
 
         for(int i=0; i<intBoard.length;i=i+2){
-            for(int j =0; j<intBoard[i].length;j=j+2){
+            if(copyBoard[i][0] == 1){
+                copyBoard[i][0] = -1;
+            }
+
+            for(int j =2; j+1<intBoard[i].length;){
                 if(copyBoard[i][j] == 1 ){
                     copyBoard[i][j] = -1;
 
                 }
+                if(j+1<intBoard[i].length){
+                    if(copyBoard[i][j+1] == 1){
+                        copyBoard[i][j+1] = -1;
+                    }
+                }
+                j=j+3;
 
             }
+            if(copyBoard[i][intBoard[i].length-1] == 1){
+                copyBoard[i][intBoard[i].length-1] =-1;
+            }
+
         }
         return copyBoard;
     }
 
     public static SaboteurMove doMove(SaboteurBoardState board,Pair<Integer,Integer> target,int player_id){
         ArrayList<SaboteurMove> legal_moves = board.getAllLegalMoves();
-        ArrayList<SaboteurCard> hand = board.getCurrentPlayerCards();
+//        ArrayList<SaboteurCard> hand = board.getCurrentPlayerCards();
 
         ArrayList<SaboteurMove> listOfMoves = A_star_search(board,target,player_id);
 
         for(int i = 0 ;i <listOfMoves.size(); i++) {
-            for(int j = 0; j<legal_moves.size();j++) {
-                if(legal_moves.get(j).getCardPlayed().getName().equals(listOfMoves.get(i).getCardPlayed().getName())){
+            for(int j = 0; j<legal_moves.size();j++){
+                String playable_move_name = legal_moves.get(j).getCardPlayed().getName();
+                String legal_move_name = listOfMoves.get(i).getCardPlayed().getName();
+                int[] posLegal = legal_moves.get(j).getPosPlayed();
+                int[] posPlayable = listOfMoves.get(i).getPosPlayed();
+
+                if(playable_move_name.equals(legal_move_name)&& posLegal[0]==posPlayable[0] && posLegal[1]==posPlayable[1]){
 
                     return listOfMoves.get(i);
                 }
@@ -236,12 +253,13 @@ public class MyTools {
 
     public static ArrayList<SaboteurMove> A_star_search(SaboteurBoardState board, Pair<Integer,Integer> target,int player_id){
         int[] target_int = new int[]{target.getKey()*3+1,target.getValue()*3+1};
-        int[][] intBoard = board.getHiddenIntBoard();
+        int[][] intBoard = convertBoard(board.getHiddenIntBoard());
+
 //        ArrayList<SaboteurMove> legal_moves = board.getAllLegalMoves();
 //        ArrayList<SaboteurCard> hand = board.getCurrentPlayerCards();
         AStar as = new AStar(intBoard, 16, 16, false);
 
-        List<AStar.Node> new_path = as.findPathTo(target_int[0], target_int[1]);
+        List<AStar.Node> new_path = as.findPathTo(target_int[1], target_int[0]);
         new_path.remove(0);
         new_path.remove(0);
         new_path.remove(new_path.size()-1);
@@ -250,38 +268,74 @@ public class MyTools {
         ArrayList<SaboteurMove> moves= new ArrayList<SaboteurMove>();
 
         for(int i = 0 ; i<new_path.size();i=i+3) {
-            AStar.Node first = new_path.get(i);
-            AStar.Node second = new_path.get(i + 1);
-            AStar.Node third = new_path.get(i + 2);
+            if(i+2<new_path.size()){
+                AStar.Node first = new_path.get(i);
+                AStar.Node second = new_path.get(i + 1);
+                AStar.Node third = new_path.get(i + 2);
+                SaboteurMove move_8 = new SaboteurMove(new SaboteurTile("8"), (second.y-1)/3, (second.x-1)/3, player_id);
+                SaboteurMove move_6 = new SaboteurMove(new SaboteurTile("6"), (second.y-1)/3, (second.x-1)/3, player_id);
+                SaboteurMove move_6_flip = new SaboteurMove(new SaboteurTile("6_flip"), (second.y-1)/3, (second.x-1)/3, player_id);
+                SaboteurMove move_10 = new SaboteurMove(new SaboteurTile("10"), (second.y-1)/3, (second.x-1)/3, player_id);
+                SaboteurMove move_0 = new SaboteurMove(new SaboteurTile("0"), (second.y-1)/3, (second.x-1)/3, player_id);
+                SaboteurMove move_9 = new SaboteurMove(new SaboteurTile("9"), (second.y-1)/3, (second.x-1)/3, player_id);
+                SaboteurMove move_9_flip = new SaboteurMove(new SaboteurTile("9_flip"), (second.y-1)/3, (second.x-1)/3, player_id);
+                SaboteurMove move_5_flip = new SaboteurMove(new SaboteurTile("5_flip"), (second.x-1)/3, (second.y-1)/3, player_id);
+                SaboteurMove move_7 = new SaboteurMove(new SaboteurTile("7"), (second.y-1)/3, (second.x-1)/3, player_id);
+                SaboteurMove move_7_flip = new SaboteurMove(new SaboteurTile("7_flip"), (second.y-1)/3, (second.x-1)/3, player_id);
+                SaboteurMove move_5 = new SaboteurMove(new SaboteurTile("5"), (second.y-1)/3, (second.x-1)/3, player_id);
+                if (first.x == second.x && second.x == third.x) {
 
-            if (first.x == second.x && second.x == third.x) {
-                SaboteurMove move = new SaboteurMove(new SaboteurTile("0"), second.x, second.y, player_id);
-                moves.add(move);
+
+
+                    moves.add(move_0);
+                    moves.add(move_8);
+                    moves.add(move_6);
+                    moves.add(move_6_flip);
+                }
+                else if(first.y == second.y && second.y == third.y) {
+
+                    moves.add(move_10);
+                    moves.add(move_8);
+                    moves.add(move_9);
+                    moves.add(move_9_flip);
+                }
+                else if((first.x == second.x - 1 && third.y == second.y - 1 && third.x == second.x && first.y == second.y) ||
+                        (first.y == second.y - 1 && third.x == second.x - 1 && third.y ==second.y && first.x == second.x)) {
+
+                    moves.add(move_5_flip);
+                    moves.add(move_8);
+                    moves.add(move_6);
+                    moves.add(move_9);
+
+                }
+                else if((first.x == second.x + 1 && second.y == third.y + 1 && first.y==second.y && second.x ==third.x) ||
+                        (first.y == second.y - 1 && second.x == third.x - 1 && first.x==second.x && second.y ==third.y)) {
+
+                    moves.add(move_8);
+                    moves.add(move_7);
+                    moves.add(move_6_flip);
+                    moves.add(move_9_flip);
+
+                }
+                else if((first.x == second.x - 1 && second.y == third.y - 1 && first.y==second.y && second.x==third.x) ||
+                        (first.y == second.y + 1 && second.x == third.x + 1 && first.x ==second.x && second.y==third.y)) {
+
+                    moves.add(move_9);
+                    moves.add(move_6);
+                    moves.add(move_8);
+                    moves.add(move_7_flip);
+                }
+                else if((first.x == second.x + 1 && second.y == third.y - 1 && first.y==second.y && second.x==third.x) ||
+                        (first.y == second.y + 1 && second.x == third.x - 1 && first.x==second.x && second.y==third.y)) {
+
+                    moves.add(move_8);
+                    moves.add(move_6_flip);
+                    moves.add(move_5);
+                    moves.add(move_9);
+                }
+
             }
-            if(first.y == second.y && second.y == third.y) {
-                SaboteurMove move = new SaboteurMove(new SaboteurTile("10"), second.x, second.y, player_id);
-                moves.add(move);
-            }
-            if((first.x == second.x - 1 && third.y == second.y + 1) ||
-                    (first.y == second.y + 1 && third.x == second.x - 1)) {
-                SaboteurMove move = new SaboteurMove(new SaboteurTile("5_flip"), second.x, second.y, player_id);
-                moves.add(move);
-            }
-            if((first.x == second.x + 1 && second.y == third.y - 1) ||
-                    (first.y == second.y + 1 && second.x == third.x - 1)) {
-                SaboteurMove move = new SaboteurMove(new SaboteurTile("7"), second.x, second.y, player_id);
-                moves.add(move);
-            }
-            if((first.x == second.x - 1 && second.y == third.y + 1) ||
-                    (first.y == second.y - 1 && second.x == third.x + 1)) {
-                SaboteurMove move = new SaboteurMove(new SaboteurTile("7_flip"), second.x, second.y, player_id);
-                moves.add(move);
-            }
-            if((first.x == second.x + 1 && second.y == third.y + 1) ||
-                    (first.y == second.y - 1 && second.x == third.x - 1)) {
-                SaboteurMove move = new SaboteurMove(new SaboteurTile("5"), second.x, second.y, player_id);
-                moves.add(move);
-            }
+
 
         }
         return moves;

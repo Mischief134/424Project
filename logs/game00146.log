@@ -1,0 +1,16 @@
+# Server version 0.08 running on nuris-mbp:8123
+# Game ID: 146
+# Board class: Saboteur.SaboteurBoard
+# Timeout: 20000
+# First Move Timeout: 30000
+# Date: Fri Apr 03 13:42:08 EDT 2020
+# Player 1: Player-0, '260713804', running on nuris-mbp
+# Player 2: Player-1, 'RandomPlayer', running on nuris-mbp
+START Player-0 260713804
+START Player-1 RandomPlayer
+BoardInit:Tile:10,Tile:7,Tile:0,Tile:14,Bonus,Map,Tile:7,Tile:5,Tile:0,Tile:0,Tile:8,Tile:3,Tile:6,Tile:11,Tile:7,Tile:2,Tile:9,Tile:9,Tile:6,Tile:8,Bonus,Tile:0,Tile:15,Bonus,Bonus,Tile:8,Tile:12,Tile:9,Tile:4,Tile:6,Tile:13,Tile:6,Destroy,Map,Malus,Tile:6,Tile:1,Map,Malus,Tile:8,Tile:9-Tile:5,Tile:9,Map,Destroy,Tile:5,Map,Tile:10-Tile:7,Tile:8,Map,Tile:5,Destroy,Tile:10,Tile:7-Tile:hidden2,Tile:hidden1,Tile:nugget
+Tile:5 4 5 1
+Map 12 3 0
+Map 12 7 1
+GAMEOVER TIMEOUT WINNER 1
+# Game ended: Fri Apr 03 13:42:50 EDT 2020

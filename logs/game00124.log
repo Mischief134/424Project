@@ -1,0 +1,20 @@
+# Server version 0.08 running on nuris-mbp:8123
+# Game ID: 124
+# Board class: Saboteur.SaboteurBoard
+# Timeout: 20000
+# First Move Timeout: 30000
+# Date: Thu Apr 02 18:12:22 EDT 2020
+# Player 1: Player-0, '260713804', running on nuris-mbp
+# Player 2: Player-1, 'RandomPlayer', running on nuris-mbp
+START Player-0 260713804
+START Player-1 RandomPlayer
+BoardInit:Tile:6,Tile:0,Tile:0,Map,Tile:0,Tile:9,Tile:15,Destroy,Tile:5,Destroy,Bonus,Malus,Malus,Tile:9,Map,Tile:8,Tile:9,Tile:12,Tile:6,Tile:4,Tile:9,Tile:7,Tile:10,Map,Tile:3,Tile:8,Tile:10,Tile:5,Bonus,Tile:14,Destroy,Tile:1,Tile:6,Tile:7,Tile:7,Tile:8,Map,Tile:2,Tile:7,Map,Tile:0-Tile:9,Tile:5,Tile:11,Tile:10,Map,Tile:8,Tile:13-Bonus,Tile:8,Tile:6,Bonus,Tile:5,Tile:6,Tile:7-Tile:nugget,Tile:hidden2,Tile:hidden1
+Tile:10 5 4 1
+Tile:7 5 3 0
+Tile:13 4 3 1
+Tile:5_flip 5 6 0
+Tile:9 4 5 1
+Map 12 3 0
+Drop 4 0 1
+Tile:9_flip 6 5 0
+Tile:11 6 6 1
