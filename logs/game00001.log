@@ -3,66 +3,47 @@
 # Board class: Saboteur.SaboteurBoard
 # Timeout: 20000
 # First Move Timeout: 30000
-# Date: Wed Apr 08 17:52:28 EDT 2020
+# Date: Wed Apr 08 22:02:39 EDT 2020
 # Player 1: Player-0, '260713804', running on nuris-mbp
 # Player 2: Player-1, 'RandomPlayer', running on nuris-mbp
 START Player-0 260713804
 START Player-1 RandomPlayer
-BoardInit:Tile:5,Tile:6,Map,Destroy,Malus,Tile:7,Tile:0,Tile:7,Tile:11,Tile:0,Tile:9,Tile:5,Tile:12,Map,Tile:1,Tile:6,Tile:3,Tile:4,Tile:6,Bonus,Tile:8,Tile:7,Tile:10,Bonus,Map,Destroy,Map,Tile:7,Tile:8,Map,Malus,Tile:6,Tile:9,Tile:10,Tile:9,Tile:13,Tile:2,Tile:14,Map,Tile:7,Tile:9-Tile:8,Tile:8,Tile:9,Tile:0,Tile:8,Bonus,Tile:6-Tile:5,Tile:5,Bonus,Tile:10,Tile:15,Tile:0,Destroy-Tile:hidden1,Tile:hidden2,Tile:nugget
-Tile:8 4 5 1
-Tile:0 6 5 0
-Tile:8 4 4 1
-Tile:6 7 5 0
-Tile:6 8 5 1
-Drop 2 0 0
-Tile:5_flip 4 6 1
-Drop 3 0 0
-Map 12 7 1
-Drop 3 0 0
-Tile:11_flip 9 5 1
-Tile:5 8 4 0
-Tile:0 3 6 1
-Drop 2 0 0
-Tile:9_flip 5 4 1
-Map 12 5 0
-Tile:9 5 6 1
-Tile:5 5 3 0
-Tile:12_flip 2 6 1
-Drop 6 0 0
-Tile:6_flip 6 6 1
-Drop 6 0 0
-Tile:3 9 4 1
-Tile:0 6 3 0
-Tile:1 7 6 1
-Tile:6 7 3 0
-Tile:10 7 2 1
-Drop 5 0 0
-Tile:8 6 7 1
-Drop 5 0 0
-Malus 0 0 1
-Map 12 3 0
-Map 12 7 1
-Drop 1 0 0
-Tile:0 7 7 1
-Drop 4 0 0
+BoardInit:Tile:7,Tile:8,Bonus,Tile:10,Bonus,Map,Tile:4,Tile:12,Tile:6,Tile:9,Map,Tile:14,Tile:10,Tile:5,Tile:6,Tile:7,Destroy,Tile:8,Malus,Tile:2,Map,Tile:9,Tile:6,Tile:8,Tile:3,Tile:5,Tile:8,Map,Tile:0,Map,Destroy,Tile:5,Tile:7,Tile:0,Tile:7,Tile:13,Tile:5,Tile:9,Bonus,Tile:15,Tile:7-Tile:0,Bonus,Destroy,Tile:6,Tile:8,Tile:9,Map-Tile:10,Tile:9,Tile:6,Tile:11,Tile:0,Malus,Tile:1-Tile:hidden2,Tile:nugget,Tile:hidden1
 Drop 3 0 1
-Drop 6 0 0
-Tile:9_flip 8 7 1
-Drop 6 0 0
-Tile:2_flip 3 4 1
-Drop 5 0 0
-Tile:9_flip 8 8 1
-Drop 5 0 0
-Tile:9 9 6 1
+Tile:6_flip 6 5 0
+Map 12 5 1
+Tile:8 7 5 0
+Tile:7_flip 7 6 1
+Tile:0 8 5 0
+Tile:0 8 6 1
+Map 12 5 0
+Tile:9 5 4 1
+Drop 2 0 0
+Destroy 8 5 1
+Drop 3 0 0
+Tile:6_flip 4 5 1
 Drop 4 0 0
-Tile:8 5 7 1
-Drop 0 0 0
-Map 12 3 1
-Drop 1 0 0
-Drop 1 0 1
-Drop 0 0 0
-Map 12 3 1
-Drop 0 0 0
-Drop 0 0 1
-GAMEOVER DRAW
-# Game ended: Wed Apr 08 17:52:28 EDT 2020
+Tile:8 4 6 1
+Drop 5 0 0
+Tile:10 6 6 1
+Tile:9_flip 5 6 0
+Map 12 7 1
+Tile:9_flip 7 4 0
+Tile:4_flip 5 7 1
+Drop 6 0 0
+Tile:6 9 6 1
+Tile:8 9 5 0
+Destroy 7 4 1
+Tile:8 10 5 0
+Tile:6_flip 3 6 1
+Tile:5_flip 4 7 0
+Tile:3_flip 2 6 1
+Drop 6 0 0
+Drop 2 0 1
+Drop 6 0 0
+Tile:0 6 4 1
+Tile:9 3 7 0
+Drop 5 0 1
+Tile:0 11 5 0
+GAMEOVER WINNER 0
+# Game ended: Wed Apr 08 22:02:41 EDT 2020

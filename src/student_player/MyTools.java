@@ -286,19 +286,29 @@ public class MyTools {
         ArrayList<SaboteurMove> listOfMoves = A_star_search(board,target,player_id);
 //        System.out.println("PAAAAATHHH     "+listOfMoves.toString());
         for(SaboteurMove move: listOfMoves){
-            System.out.println("PAAAAATHHH     "+ move.toPrettyString());
+            System.out.println("MOVEEESSS     "+ move.toPrettyString());
         }
 
-        for(int i = 0 ;i <listOfMoves.size(); i++) {
+        for(SaboteurMove move: legal_moves){
+            System.out.println("Legal_Moves     "+ move.toPrettyString());
+        }
+
+
+        for(int i = listOfMoves.size()-1 ;i >=0; i=i-1) {
+//        for(int i = 0 ;i <listOfMoves.size(); i++) {
             for(int j = 0; j<legal_moves.size();j++){
                 String playable_move_name = legal_moves.get(j).getCardPlayed().getName();
                 String legal_move_name = listOfMoves.get(i).getCardPlayed().getName();
                 int[] posLegal = legal_moves.get(j).getPosPlayed();
                 int[] posPlayable = listOfMoves.get(i).getPosPlayed();
 
-                if(playable_move_name.equals(legal_move_name)&& posLegal[0]==posPlayable[0] && posLegal[1]==posPlayable[1]){
+                if(legal_moves.get(j).toPrettyString().equals(listOfMoves.get(i).toPrettyString())){
                     return listOfMoves.get(i);
                 }
+
+//                if(playable_move_name.equals(legal_move_name)&& posLegal[0]==posPlayable[0] && posLegal[1]==posPlayable[1]){
+//                    return listOfMoves.get(i);
+//                }
                 SaboteurMove malus = new SaboteurMove(new SaboteurMalus(), 0 ,0, player_id);
                 if(malus.getCardPlayed().getName().equals(legal_move_name)){
                     return malus;
@@ -391,6 +401,56 @@ public class MyTools {
                     moves.add(move_5);
                     moves.add(move_9);
                 }
+
+//                if (first.x == second.x && second.x == third.x) {
+//
+//
+//                    moves.add(move_8);
+//                    moves.add(move_6);
+//                    moves.add(move_6_flip);
+//                    moves.add(move_0);
+//                }
+//                else if(first.y == second.y && second.y == third.y) {
+//
+//                    moves.add(move_8);
+//                    moves.add(move_9);
+//                    moves.add(move_9_flip);
+//                    moves.add(move_10);
+//                }
+//                else if((first.x == second.x - 1 && third.y == second.y - 1 && third.x == second.x && first.y == second.y) ||
+//                        (first.y == second.y - 1 && third.x == second.x - 1 && third.y ==second.y && first.x == second.x)) {
+//
+//                    moves.add(move_8);
+//                    moves.add(move_6);
+//                    moves.add(move_9_flip);
+//                    moves.add(move_5_flip);
+//
+//                }
+//                else if((first.x == second.x + 1 && second.y == third.y + 1 && first.y==second.y && second.x ==third.x) ||
+//                        (first.y == second.y - 1 && second.x == third.x - 1 && first.x==second.x && second.y ==third.y)) {
+//
+//                    moves.add(move_8);
+//                    moves.add(move_6_flip);
+//                    moves.add(move_9_flip);
+//                    moves.add(move_7);
+//
+//                }
+//                else if((first.x == second.x - 1 && second.y == third.y - 1 && first.y==second.y && second.x==third.x) ||
+//                        (first.y == second.y + 1 && second.x == third.x + 1 && first.x ==second.x && second.y==third.y)) {
+//
+//                    moves.add(move_8);
+//                    moves.add(move_6);
+//                    moves.add(move_9);
+//                    moves.add(move_7_flip);
+//                }
+//                else if((first.x == second.x + 1 && second.y == third.y - 1 && first.y==second.y && second.x==third.x) ||
+//                        (first.y == second.y + 1 && second.x == third.x - 1 && first.x==second.x && second.y==third.y)) {
+//
+//                    moves.add(move_8);
+//                    moves.add(move_6_flip);
+//                    moves.add(move_9);
+//                    moves.add(move_5);
+//                }
 
             }
 
