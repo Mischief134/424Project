@@ -151,7 +151,7 @@ public class MyTools {
 
     }
 
-  
+
 
     public static SaboteurMove dropUnusedCard(SaboteurBoardState board, int player_id){
         ArrayList<String> droppable = new ArrayList<String>(Arrays.asList("Tile:1","Tile:2","Tile:3","Tile:4","Tile:2_flip",

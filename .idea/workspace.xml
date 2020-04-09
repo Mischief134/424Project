@@ -89,8 +89,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/student_player/MyTools.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="154" column="8" selection-start-line="154" selection-start-column="8" selection-end-line="154" selection-end-column="8" />
+            <state relative-caret-position="146">
+              <caret line="153" selection-start-line="153" selection-end-line="153" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#10016#10030#0" expanded="true" />
@@ -292,7 +292,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586472817171" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586472936170" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="SDKs" />
@@ -385,7 +385,7 @@
       <workItem from="1585753371204" duration="29880000" />
       <workItem from="1585932426202" duration="5460000" />
       <workItem from="1586195308205" duration="25180000" />
-      <workItem from="1586296972498" duration="42045000" />
+      <workItem from="1586296972498" duration="42239000" />
     </task>
     <task id="LOCAL-00001" summary="A lot of progress. Still doesnt win the random player tho">
       <created>1585938816341</created>
@@ -450,11 +450,18 @@
       <option name="project" value="LOCAL" />
       <updated>1586457622851</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Finished&#10;Todo:&#10;Get rid of duplicates&#10;Maybe destroy closer to goal.">
+      <created>1586472912021</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1586472912021</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117643000" />
+    <option name="totallyTimeSpent" value="117837000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -467,7 +474,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26752505" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -533,7 +539,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/student_player/MyTools.java</url>
-          <line>287</line>
+          <line>285</line>
           <properties />
           <option name="timeStamp" value="101" />
         </line-breakpoint>
@@ -729,8 +735,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/student_player/MyTools.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="154" column="8" selection-start-line="154" selection-start-column="8" selection-end-line="154" selection-end-column="8" />
+        <state relative-caret-position="146">
+          <caret line="153" selection-start-line="153" selection-end-line="153" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#10016#10030#0" expanded="true" />
