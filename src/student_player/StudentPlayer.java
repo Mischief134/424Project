@@ -70,7 +70,7 @@ public class StudentPlayer extends SaboteurPlayer {
 
 
 //     boardState.printBoard();
-        SaboteurMove x =MyTools.doMove(boardState,target1,player_id);
+        SaboteurMove x = MyTools.doMove(boardState,target1,player_id);
         if(x == null){
             return boardState.getRandomMove();
         }

@@ -305,8 +305,26 @@ public class MyTools {
                 }
             }
         }
-        return dropUnusedCard(board,player_id);
+
+        int randIndex = getRandomNumberInRange(0, legal_moves.size());
+        return legal_moves.get(randIndex);
+//        return dropUnusedCard(board,player_id);
     }
+
+//    public static SaboteurMove doMove(SaboteurBoardState board,Pair<Integer,Integer> target,int player_id) {
+//        ArrayList<SaboteurMove> legalMoves = board.getAllLegalMoves();
+//        ArrayList<SaboteurMove> chosenMoves = A_star_search(board, target, player_id);
+//
+//        for (SaboteurMove legalMove : legalMoves) {
+//            for (SaboteurMove chosenMove : chosenMoves) {
+//                if (legalMove.toPrettyString().equals(chosenMove.toPrettyString())) {
+//                    return chosenMove;
+//                }
+//            }
+//        }
+//
+//        return dropUnusedCard(board, player_id);
+//    }
 
     public static ArrayList<SaboteurMove> A_star_search(SaboteurBoardState board, Pair<Integer,Integer> target,int player_id){
         int[] target_int = new int[]{target.getKey()*3+1,target.getValue()*3+1};
@@ -330,6 +348,7 @@ public class MyTools {
                 AStar.Node first = new_path.get(i);
                 AStar.Node second = new_path.get(i + 1);
                 AStar.Node third = new_path.get(i + 2);
+
                 SaboteurMove move_8 = new SaboteurMove(new SaboteurTile("8"), (second.y-1)/3, (second.x-1)/3, player_id);
                 SaboteurMove move_6 = new SaboteurMove(new SaboteurTile("6"), (second.y-1)/3, (second.x-1)/3, player_id);
                 SaboteurMove move_6_flip = new SaboteurMove(new SaboteurTile("6_flip"), (second.y-1)/3, (second.x-1)/3, player_id);
@@ -341,6 +360,7 @@ public class MyTools {
                 SaboteurMove move_7 = new SaboteurMove(new SaboteurTile("7"), (second.y-1)/3, (second.x-1)/3, player_id);
                 SaboteurMove move_7_flip = new SaboteurMove(new SaboteurTile("7_flip"), (second.y-1)/3, (second.x-1)/3, player_id);
                 SaboteurMove move_5 = new SaboteurMove(new SaboteurTile("5"), (second.y-1)/3, (second.x-1)/3, player_id);
+
                 if (first.x == second.x && second.x == third.x) {
 
 
@@ -391,10 +411,7 @@ public class MyTools {
                     moves.add(move_5);
                     moves.add(move_9);
                 }
-
             }
-
-
         }
         return moves;
     }
