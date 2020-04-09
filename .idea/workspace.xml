@@ -2,15 +2,63 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d05a8e65-8050-41a1-8682-3631d42dea6f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00001.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00001.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00002.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00002.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00003.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00003.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00004.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00004.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00005.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00005.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00006.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00006.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00007.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00007.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00008.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00008.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00009.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00009.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00010.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00010.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00011.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00011.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00012.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00012.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00013.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00013.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00014.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00014.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00015.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00015.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00016.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00016.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00017.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00017.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00018.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00018.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00019.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00019.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00020.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00020.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00021.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00021.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00022.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00022.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00023.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00023.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00024.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00024.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00025.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00025.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00026.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00026.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00027.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00027.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00028.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00028.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00029.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00029.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00030.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00030.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00031.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00031.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00032.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00032.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00033.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00033.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00034.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00034.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00035.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00035.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00036.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00036.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00037.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00037.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00038.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00038.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00039.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00039.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00040.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00040.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00041.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00041.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00042.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00042.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00043.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00043.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00044.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00044.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00045.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00045.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00046.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00046.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00047.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00047.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00048.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00048.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00049.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00049.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00050.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00050.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00051.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00051.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00052.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00052.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/game00053.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/game00053.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/outcomes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logs/outcomes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/424Proj/boardgame/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/424Proj/boardgame/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/424Proj/boardgame/Server$ClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/424Proj/boardgame/Server$ClientHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/424Proj/boardgame/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/424Proj/boardgame/Server.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/424Proj/student_player/MyTools.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/424Proj/student_player/MyTools.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Saboteur/SaboteurBoardState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Saboteur/SaboteurBoardState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/student_player/MyTools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/student_player/MyTools.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/student_player/StudentPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/student_player/StudentPlayer.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,13 +67,21 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/424Proj$Autoplay.ic" NAME="Autoplay Coverage Results" MODIFIED="1586383057153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>autoplay.*</FILTER>
+    </SUITE>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/student_player/StudentPlayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1260">
-              <caret line="72" column="25" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="25" />
+            <state relative-caret-position="737">
+              <caret line="71" column="31" lean-forward="true" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -33,8 +89,43 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/student_player/MyTools.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1438">
-              <caret line="292" selection-start-line="292" selection-end-line="292" />
+            <state relative-caret-position="146">
+              <caret line="153" selection-start-line="153" selection-end-line="153" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#10016#10030#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/autoplay/Autoplay.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="367">
+              <caret line="48" column="72" selection-start-line="48" selection-start-column="72" selection-end-line="48" selection-end-column="72" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/boardgame/ServerGUI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="39" column="116" selection-start-line="39" selection-start-column="88" selection-end-line="39" selection-end-column="116" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/javafx-src.zip!/javafx/util/Pair.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="77" column="18" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
+              <folding>
+                <element signature="e#1415#1416#0" expanded="true" />
+                <element signature="e#1455#1456#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -42,8 +133,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/student_player/AStar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="140" column="19" selection-start-line="140" selection-start-column="19" selection-end-line="140" selection-end-column="19" />
+            <state relative-caret-position="2160">
+              <caret line="144" selection-start-line="144" selection-end-line="144" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -52,13 +143,35 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Saboteur/cardClasses/SaboteurTile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Saboteur/SaboteurMove.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="83" column="36" lean-forward="true" selection-start-line="83" selection-start-column="36" selection-end-line="83" selection-end-column="36" />
+            <state relative-caret-position="336">
+              <caret line="83" column="18" selection-start-line="83" selection-start-column="18" selection-end-line="83" selection-end-column="18" />
               <folding>
                 <element signature="e#2423#2424#0" expanded="true" />
                 <element signature="e#2478#2479#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Saboteur/SaboteurBoardState.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="452">
+              <caret line="963" column="1" selection-start-line="963" selection-start-column="1" selection-end-line="963" selection-end-column="1" />
+              <folding>
+                <element signature="e#40484#40485#0" expanded="true" />
+                <element signature="e#40535#40536#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -86,71 +199,87 @@
       <find>2</find>
       <find>-0</find>
       <find>7_flip</find>
+      <find>Taaa</find>
+      <find>100</find>
+      <find>T</find>
+      <find>DROP 6 0</find>
+      <find>TAAAAAAAAAAAAAR</find>
+      <find>Tile:8 8 5</find>
+      <find>Drop 2 0</find>
+      <find>MAP 12 3</find>
+      <find>TAAAAAAAA</find>
+      <find>MALUS 0 0</find>
+      <find>TAAAAAA</find>
+      <find>12=7</find>
+      <find>malus</find>
+      <find>bin</find>
+      <find>TA</find>
     </findStrings>
     <replaceStrings>
       <replace>-3</replace>
-      <replace>0</replace>
       <replace>-1</replace>
+      <replace>0</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Saboteur/SaboteurBoardPanel.java" />
         <option value="$PROJECT_DIR$/src/boardgame/ServerGUI.java" />
-        <option value="$PROJECT_DIR$/src/Saboteur/SaboteurBoardState.java" />
         <option value="$PROJECT_DIR$/src/student_player/AStar.java" />
+        <option value="$PROJECT_DIR$/src/Saboteur/SaboteurBoardState.java" />
+        <option value="$PROJECT_DIR$/src/autoplay/Autoplay.java" />
         <option value="$PROJECT_DIR$/src/student_player/StudentPlayer.java" />
         <option value="$PROJECT_DIR$/src/student_player/MyTools.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="151" />
-    <option name="width" value="1714" />
-    <option name="height" value="1049" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="424Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="424Project" type="462c0819:PsiDirectoryNode" />
+              <item name="424Proj" type="b2602c69:ProjectViewProjectNode" />
+              <item name="424Proj" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="424Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="424Project" type="462c0819:PsiDirectoryNode" />
+              <item name="424Proj" type="b2602c69:ProjectViewProjectNode" />
+              <item name="424Proj" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="424Proj" type="b2602c69:ProjectViewProjectNode" />
+              <item name="424Proj" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="424Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="424Project" type="462c0819:PsiDirectoryNode" />
+              <item name="424Proj" type="b2602c69:ProjectViewProjectNode" />
+              <item name="424Proj" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="boardgame" type="462c0819:PsiDirectoryNode" />
+              <item name="autoplay" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="424Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="424Project" type="462c0819:PsiDirectoryNode" />
+              <item name="424Proj" type="b2602c69:ProjectViewProjectNode" />
+              <item name="424Proj" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Saboteur" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="424Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="424Project" type="462c0819:PsiDirectoryNode" />
+              <item name="424Proj" type="b2602c69:ProjectViewProjectNode" />
+              <item name="424Proj" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="student_player" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -158,16 +287,22 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586367626538" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586472936170" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/bin" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -195,6 +330,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Autoplay" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="autoplay.Autoplay" />
+      <module name="424Proj" />
+      <option name="PROGRAM_PARAMETERS" value="5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="autoplay.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ServerGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="boardgame.ServerGUI" />
       <module name="424Proj" />
@@ -208,11 +357,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.AStar" />
+      <item itemvalue="Application.Autoplay" />
+      <item itemvalue="Application.ServerGUI" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.ServerGUI" />
-        <item itemvalue="Application.AStar" />
-        <item itemvalue="Application.ServerGUI" />
+        <item itemvalue="Application.Autoplay" />
         <item itemvalue="Application.AStar" />
       </list>
     </recent_temporary>
@@ -232,7 +385,7 @@
       <workItem from="1585753371204" duration="29880000" />
       <workItem from="1585932426202" duration="5460000" />
       <workItem from="1586195308205" duration="25180000" />
-      <workItem from="1586296972498" duration="16105000" />
+      <workItem from="1586296972498" duration="42239000" />
     </task>
     <task id="LOCAL-00001" summary="A lot of progress. Still doesnt win the random player tho">
       <created>1585938816341</created>
@@ -262,17 +415,67 @@
       <option name="project" value="LOCAL" />
       <updated>1586294263823</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Work for first target">
+      <created>1586368035210</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1586368035211</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Okay win rate">
+      <created>1586391996102</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1586391996102</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Okay win rate">
+      <created>1586392014783</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1586392014783</updated>
+    </task>
+    <task id="LOCAL-00008" summary="67%">
+      <created>1586398322332</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1586398322332</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Finished&#10;Todo:&#10;Get rid of duplicates&#10;Maybe destroy closer to goal.">
+      <created>1586457622851</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1586457622851</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Finished&#10;Todo:&#10;Get rid of duplicates&#10;Maybe destroy closer to goal.">
+      <created>1586472912021</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1586472912021</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91703000" />
+    <option name="totallyTimeSpent" value="117837000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="1177" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13897763" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26752505" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -281,18 +484,18 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.8684604" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.34096387" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.40240964" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.59518075" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32891566" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32891566" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32891566" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" />
-      <window_info anchor="bottom" id="CheckStyle" order="13" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.3297568" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -303,7 +506,6 @@
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
-      <window_info anchor="right" id="Armory" order="10" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -314,16 +516,32 @@
     <MESSAGE value="Some Progress" />
     <MESSAGE value="Added AStar" />
     <MESSAGE value="Maybe Works" />
-    <option name="LAST_COMMIT_MESSAGE" value="Maybe Works" />
+    <MESSAGE value="Work for first target" />
+    <MESSAGE value="Okay win rate" />
+    <MESSAGE value="67%" />
+    <MESSAGE value="Finished&#10;Todo:&#10;Get rid of duplicates&#10;Maybe destroy closer to goal." />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished&#10;Todo:&#10;Get rid of duplicates&#10;Maybe destroy closer to goal." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/student_player/MyTools.java</url>
-          <line>141</line>
+          <url>file://$PROJECT_DIR$/src/student_player/AStar.java</url>
+          <line>189</line>
           <properties />
-          <option name="timeStamp" value="54" />
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/autoplay/Autoplay.java</url>
+          <line>38</line>
+          <properties />
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/student_player/MyTools.java</url>
+          <line>285</line>
+          <properties />
+          <option name="timeStamp" value="101" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -345,7 +563,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/OneDrive - McGill University/SCHOOL/Comp424/Daniel/submission/src/student_player/Heuristic.java" />
+    <entry file="file://$USER_HOME$/OneDrive - McGill University/SCHOOL/Comp424/Daniel/submission/src/student_player/Heuristic.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Saboteur/RandomSaboteurPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Saboteur/SaboteurBoardPanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3638">
@@ -353,16 +580,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/boardgame/ServerGUI.java">
+    <entry file="file://$USER_HOME$/OneDrive - McGill University/SCHOOL/Comp424/Daniel/submission/src/student_player/StudentPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="52" column="40" lean-forward="true" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
+        <state relative-caret-position="330">
+          <caret line="31" column="36" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/OneDrive - McGill University/SCHOOL/Comp424/Daniel/submission/src/student_player/StudentPlayer.java" />
-    <entry file="file://$USER_HOME$/OneDrive - McGill University/SCHOOL/Comp424/Daniel/submission/src/student_player/MyTools.java" />
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/javafx-src.zip!/javafx/util/Pair.java" />
+    <entry file="file://$USER_HOME$/OneDrive - McGill University/SCHOOL/Comp424/Daniel/submission/src/student_player/MyTools.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="62" column="32" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Saboteur/cardClasses/SaboteurMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -370,12 +601,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/Cloneable.java" />
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/ArrayList.java" />
-    <entry file="file://$PROJECT_DIR$/src/Saboteur/cardClasses/SaboteurTile.java">
+    <entry file="file://$PROJECT_DIR$/src/boardgame/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="77" column="59" selection-start-line="77" selection-start-column="33" selection-end-line="77" selection-end-column="59" />
+        <state relative-caret-position="79">
+          <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/Cloneable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="52" column="17" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/boardgame/Move.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="42" lean-forward="true" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -388,54 +631,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/boardgame/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
+        <state relative-caret-position="1860">
           <caret line="129" selection-start-line="129" selection-end-line="129" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Saboteur/SaboteurBoardState.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="471" column="11" selection-start-line="471" selection-start-column="11" selection-end-line="471" selection-end-column="11" />
+        <state relative-caret-position="6840">
+          <caret line="494" column="13" selection-start-line="494" selection-start-column="13" selection-end-line="494" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/javafx-src.zip!/javafx/util/Pair.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="77" column="18" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
           <folding>
-            <element signature="e#40480#40481#0" expanded="true" />
-            <element signature="e#40531#40532#0" expanded="true" />
+            <element signature="e#1415#1416#0" expanded="true" />
+            <element signature="e#1455#1456#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/boardgame/Move.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="42" lean-forward="true" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/boardgame/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1064">
-          <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Saboteur/SaboteurPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
+        <state relative-caret-position="225">
           <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Saboteur/RandomSaboteurPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Saboteur/SaboteurMove.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="83" column="36" lean-forward="true" selection-start-line="83" selection-start-column="36" selection-end-line="83" selection-end-column="36" />
+        <state relative-caret-position="336">
+          <caret line="83" column="18" selection-start-line="83" selection-start-column="18" selection-end-line="83" selection-end-column="18" />
           <folding>
             <element signature="e#2423#2424#0" expanded="true" />
             <element signature="e#2478#2479#0" expanded="true" />
@@ -443,17 +672,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/student_player/StudentPlayer.java">
+    <entry file="file://$PROJECT_DIR$/src/boardgame/ServerGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="72" column="25" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="25" />
+        <state relative-caret-position="225">
+          <caret line="39" column="116" selection-start-line="39" selection-start-column="88" selection-end-line="39" selection-end-column="116" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/student_player/AStar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="140" column="19" selection-start-line="140" selection-start-column="19" selection-end-line="140" selection-end-column="19" />
+        <state relative-caret-position="2160">
+          <caret line="144" selection-start-line="144" selection-end-line="144" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Saboteur/cardClasses/SaboteurTile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Saboteur/SaboteurBoardState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="963" column="1" selection-start-line="963" selection-start-column="1" selection-end-line="963" selection-end-column="1" />
+          <folding>
+            <element signature="e#40484#40485#0" expanded="true" />
+            <element signature="e#40535#40536#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/production/424Proj/autoplay/Autoplay.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-16">
+          <folding>
+            <element signature="e#0#2515#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/autoplay/Autoplay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="48" column="72" selection-start-line="48" selection-start-column="72" selection-end-line="48" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/student_player/StudentPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="737">
+          <caret line="71" column="31" lean-forward="true" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -462,10 +735,88 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/student_player/MyTools.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1438">
-          <caret line="292" selection-start-line="292" selection-end-line="292" />
+        <state relative-caret-position="146">
+          <caret line="153" selection-start-line="153" selection-end-line="153" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#10016#10030#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>424Proj</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
