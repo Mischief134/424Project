@@ -44,9 +44,9 @@ public class StudentPlayer extends SaboteurPlayer {
         target1 = MyTools.selectTarget(boardState);
         target1=  MyTools.setTargetWithNugget(boardState,target1);
         SaboteurMove mapMove = new SaboteurMove(new SaboteurMap(),target1.getKey(),target1.getValue(),player_id);
-//        if(MyTools.doMapMove(boardState,mapMove)){
-//            return mapMove;
-//        }
+        if(MyTools.doMapMove(boardState,mapMove)){
+            return mapMove;
+        }
 
 //        int[][] arr = new int[][]{{0,0,0},{1,1,1},{0,0,0}};
         int[][] value = MyTools.convertBoard(val);
@@ -74,6 +74,7 @@ public class StudentPlayer extends SaboteurPlayer {
         if(x == null){
             return boardState.getRandomMove();
         }
+        System.out.println("TAAAAAaAAAAAAARRRRRRRGEEEEEETTTTTTTTT         "+target1.toString());
         return MyTools.doMove(boardState,target1,player_id);
 
         // return MyTools.selectTile(boardState,target1,player_id);

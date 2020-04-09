@@ -3,10 +3,66 @@
 # Board class: Saboteur.SaboteurBoard
 # Timeout: 20000
 # First Move Timeout: 30000
-# Date: Sun Mar 29 22:50:24 EDT 2020
-# Player 1: Player-0, 'Human', running on nuris-mbp
-# Player 2: Player-1, '260713804', running on nuris-mbp
-START Player-0 Human
-START Player-1 260713804
-BoardInit:Tile:7,Tile:2,Destroy,Tile:4,Malus,Tile:8,Tile:9,Tile:9,Tile:5,Tile:6,Map,Tile:0,Bonus,Tile:9,Bonus,Map,Tile:7,Tile:6,Tile:0,Malus,Tile:10,Tile:14,Map,Tile:15,Bonus,Tile:0,Tile:5,Tile:6,Tile:0,Tile:7,Tile:8,Tile:5,Bonus,Tile:6,Tile:3,Tile:5,Tile:8,Map,Destroy,Map,Tile:11-Tile:1,Tile:7,Tile:10,Tile:10,Tile:6,Tile:8,Tile:7-Tile:8,Destroy,Map,Tile:9,Tile:9,Tile:13,Tile:12-Tile:nugget,Tile:hidden1,Tile:hidden2
-Tile:7 5 4 1
+# Date: Wed Apr 08 18:08:57 EDT 2020
+# Player 1: Player-0, '260713804', running on nuris-mbp
+# Player 2: Player-1, 'RandomPlayer', running on nuris-mbp
+START Player-0 260713804
+START Player-1 RandomPlayer
+BoardInit:Tile:7,Tile:11,Tile:8,Tile:5,Map,Tile:6,Bonus,Tile:9,Tile:5,Tile:9,Bonus,Tile:0,Tile:9,Map,Tile:4,Destroy,Tile:0,Map,Tile:2,Tile:9,Tile:10,Tile:7,Tile:6,Tile:7,Tile:5,Tile:8,Tile:3,Map,Tile:0,Tile:10,Tile:6,Tile:8,Tile:0,Map,Destroy,Malus,Tile:7,Tile:13,Tile:9,Tile:7,Tile:5-Bonus,Tile:14,Tile:8,Tile:1,Malus,Tile:12,Tile:15-Tile:8,Tile:6,Bonus,Tile:10,Tile:6,Destroy,Map-Tile:nugget,Tile:hidden1,Tile:hidden2
+Tile:1 6 5 1
+Map 12 5 0
+Drop 1 0 1
+Tile:6 4 5 0
+Tile:7 4 4 1
+Drop 1 0 0
+Drop 3 0 1
+Drop 3 0 0
+Map 12 5 1
+Drop 3 0 0
+Tile:8 3 5 1
+Tile:9 3 4 0
+Tile:15 3 6 1
+Tile:9 2 5 0
+Tile:9 3 3 1
+Map 12 3 0
+Malus 0 0 1
+Drop 6 0 0
+Tile:0 7 5 1
+Map 12 3 0
+Tile:4 2 4 1
+Drop 4 0 0
+Tile:5_flip 2 6 1
+Drop 5 0 0
+Tile:8 3 7 1
+Drop 1 0 0
+Tile:10 5 4 1
+Drop 4 0 0
+Tile:3 4 7 1
+Drop 4 0 0
+Tile:2 2 7 1
+Map 12 7 0
+Tile:0 1 7 1
+Drop 5 0 0
+Tile:6 1 6 1
+Drop 3 0 0
+Tile:6_flip 5 3 1
+Drop 6 0 0
+Destroy 5 4 1
+Drop 6 0 0
+Tile:5_flip 2 8 1
+Map 12 7 0
+Tile:7 3 2 1
+Drop 4 0 0
+Tile:9 5 4 1
+Drop 2 0 0
+Tile:0 4 3 1
+Drop 0 0 0
+Tile:5_flip 5 6 1
+Drop 1 0 0
+Drop 0 0 1
+Drop 0 0 0
+Drop 1 0 1
+Drop 0 0 0
+Drop 0 0 1
+GAMEOVER DRAW
+# Game ended: Wed Apr 08 18:08:57 EDT 2020

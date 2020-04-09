@@ -1,5 +1,6 @@
 package student_player;
 
+import Saboteur.SaboteurBoard;
 import Saboteur.SaboteurBoardState;
 import Saboteur.SaboteurMove;
 import Saboteur.cardClasses.*;
@@ -15,23 +16,41 @@ public class MyTools {
         return Math.random();
     }
 
+//    public static Pair<Integer, Integer> selectTarget(SaboteurBoardState board){
+//        Pair<Integer,Integer> target1 = new Pair<Integer,Integer>(12,5);
+//        SaboteurTile[][] currentTiles = board.getHiddenBoard();
+//        if(currentTiles[target1.getKey()][target1.getValue()].getIdx().contains("8")){
+//            return target1;
+//        }
+//        if(currentTiles[target1.getKey()][target1.getValue()].getIdx().contains("hidden")){
+//            target1 = new Pair<Integer,Integer>(12,3);
+//            return target1;
+//        }
+//        if(currentTiles[target1.getKey()][target1.getValue()].getIdx().contains("hidden")){
+//            target1 = new Pair<Integer,Integer>(12,7);
+//            return target1;
+//        }
+//        if(currentTiles[target1.getKey()][target1.getValue()].getIdx().equals("nugget")){
+//            return target1;
+//        }
+//        return target1;
+//    }
+
     public static Pair<Integer, Integer> selectTarget(SaboteurBoardState board){
         Pair<Integer,Integer> target1 = new Pair<Integer,Integer>(12,5);
         SaboteurTile[][] currentTiles = board.getHiddenBoard();
-        if(currentTiles[target1.getKey()][target1.getValue()].getIdx().equals("8")){
+        if(currentTiles[12][5].getIdx().contains("8")){
             return target1;
         }
-        if(currentTiles[target1.getKey()][target1.getValue()].getIdx().equals("hidden1")){
-            target1 = new Pair<Integer,Integer>(12,3);
+        if(currentTiles[12][3].getIdx().contains("8")){
+            target1 = new Pair<>(12, 3);
             return target1;
         }
-        if(currentTiles[target1.getKey()][target1.getValue()].getIdx().equals("hidden2")){
-            target1 = new Pair<Integer,Integer>(12,7);
+        if(currentTiles[12][7].getIdx().contains("8")){
+            target1 = new Pair<>(12, 7);
             return target1;
         }
-        if(currentTiles[target1.getKey()][target1.getValue()].getIdx().equals("nugget")){
-            return target1;
-        }
+
         return target1;
     }
 
@@ -42,7 +61,7 @@ public class MyTools {
                if(x[i][j]!= null){
                    String val = x[i][j].getIdx();
 
-                   if(x[i][j].getIdx().equals("nugget")){
+                   if(x[i][j].getIdx().contains("nugget")){
                        target =new Pair<Integer,Integer>(i,j);
                    }
                }
@@ -55,11 +74,36 @@ public class MyTools {
 
     }
 
+    public static boolean nuggetExists(SaboteurBoardState board){
+        SaboteurTile[][] x = board.getHiddenBoard();
+        for(int i = 0; i<13; i++){
+            for(int j = 0 ; j<13;j++){
+                if(x[i][j]!= null){
+
+
+                    if(x[i][j].getIdx().contains("nugget")){
+                        return true;
+                    }
+                }
+
+
+
+            }
+        }
+        return false;
+
+    }
+
     public static boolean doMapMove(SaboteurBoardState board,  SaboteurMove mapMove){
         ArrayList<SaboteurCard> hand = board.getCurrentPlayerCards();
         for(SaboteurCard card : hand){
             if (card instanceof SaboteurMap){
 //                board.processMove(mapMove);
+                SaboteurTile[][] x = board.getHiddenBoard();
+                if(nuggetExists(board)){
+                    return false;
+                }
+
                 return true;
             }
         }
@@ -89,17 +133,20 @@ public class MyTools {
 //                board.processMove(mapMove);
                 val = true;
             }
-            if (card instanceof SaboteurMalus){
-//
-                val = true;
-            }
+//            if (card instanceof SaboteurMalus){
+////
+//                val = true;
+//            }
             if (card instanceof SaboteurBonus){
 //                board.processMove(mapMove);
                 val = true;
             }
             if (card instanceof SaboteurMap){
 //                board.processMove(mapMove);
-                val = true;
+                if(nuggetExists(board)){
+                    val = true;
+                }
+
             }
             if(val){
                 SaboteurMove move = new SaboteurMove(new SaboteurDrop(),hand.indexOf(card),0,player_id);
@@ -229,11 +276,18 @@ public class MyTools {
         return copyBoard;
     }
 
+
+
+
     public static SaboteurMove doMove(SaboteurBoardState board,Pair<Integer,Integer> target,int player_id){
         ArrayList<SaboteurMove> legal_moves = board.getAllLegalMoves();
 //        ArrayList<SaboteurCard> hand = board.getCurrentPlayerCards();
 
         ArrayList<SaboteurMove> listOfMoves = A_star_search(board,target,player_id);
+//        System.out.println("PAAAAATHHH     "+listOfMoves.toString());
+        for(SaboteurMove move: listOfMoves){
+            System.out.println("PAAAAATHHH     "+ move.toPrettyString());
+        }
 
         for(int i = 0 ;i <listOfMoves.size(); i++) {
             for(int j = 0; j<legal_moves.size();j++){
@@ -243,8 +297,11 @@ public class MyTools {
                 int[] posPlayable = listOfMoves.get(i).getPosPlayed();
 
                 if(playable_move_name.equals(legal_move_name)&& posLegal[0]==posPlayable[0] && posLegal[1]==posPlayable[1]){
-
                     return listOfMoves.get(i);
+                }
+                SaboteurMove malus = new SaboteurMove(new SaboteurMalus(), 0 ,0, player_id);
+                if(malus.getCardPlayed().getName().equals(legal_move_name)){
+                    return malus;
                 }
             }
         }
@@ -260,6 +317,7 @@ public class MyTools {
         AStar as = new AStar(intBoard, 16, 16, false);
 
         List<AStar.Node> new_path = as.findPathTo(target_int[1], target_int[0]);
+
         new_path.remove(0);
         new_path.remove(0);
         new_path.remove(new_path.size()-1);
