@@ -109,15 +109,7 @@ public class MyTools {
         }
         return false;
     }
-    private static int getRandomNumberInRange(int min, int max) {
 
-        if (min >= max) {
-            throw new IllegalArgumentException("max must be greater than min");
-        }
-
-        Random r = new Random();
-        return r.nextInt((max - min) + 1) + min;
-    }
 
     public static SaboteurMove useDestroy(SaboteurBoardState board, int player_id){
         ArrayList<String> droppable = new ArrayList<String>(Arrays.asList("Tile:1","Tile:2","Tile:3","Tile:4","Tile:2_flip",
@@ -159,11 +151,13 @@ public class MyTools {
 
     }
 
+  
+
     public static SaboteurMove dropUnusedCard(SaboteurBoardState board, int player_id){
         ArrayList<String> droppable = new ArrayList<String>(Arrays.asList("Tile:1","Tile:2","Tile:3","Tile:4","Tile:2_flip",
                 "Tile:3_flip","Tile:4_flip","Tile:11","Tile:11_flip","Tile:12","Tile:12_flip","Tile:13",
                 "Tile:14","Tile:14_flip","Tile:15"));
-        int index = getRandomNumberInRange(0,droppable.size()-1);
+
         ArrayList<SaboteurCard> hand = board.getCurrentPlayerCards();
         for(SaboteurCard card : hand){
             String card_str = card.getName();
@@ -203,74 +197,7 @@ public class MyTools {
 
     }
 
-//    public static SaboteurMove chooseTile(SaboteurMove leg_move, SaboteurBoardState board,Pair<Integer,Integer> target, ArrayList<SaboteurCard> hand,int player_id){
-//
-//        if(leg_move == null){
-//            System.out.println("GOTVEREN");
-//        }
-//        int[] pos = leg_move.getPosPlayed();
-//
-//        for(SaboteurCard card : hand) {
-//            boolean x = (card  == leg_move.getCardPlayed());
-//            boolean y = card.getName().contains("8");
-//            if (card.getName().contains(leg_move.getCardPlayed().getName())&& card.getName().contains("8")) {
-//                SaboteurMove move = new SaboteurMove(new SaboteurTile("8"), pos[0], pos[1], player_id);
-//                if(move == null){
-//                    System.out.println("GOTVEREN");
-//                }
-//                return move;
-//            }
-//        }
-////        for(SaboteurCard card : hand) {
-////            boolean x = (card  == leg_move.getCardPlayed());
-////            boolean y = card.getName().contains("0");
-////            if (card.getName().contains(leg_move.getCardPlayed().getName()) && card.getName().contains("0")) {
-////                SaboteurMove move = new SaboteurMove(new SaboteurTile("0"), pos[0], pos[1], player_id);
-////                if(move == null){
-////                    System.out.println("GOTVEREN");
-////                }
-////                return move;
-////            }
-////        }
-////        for(SaboteurCard card : hand) {
-////            if (card.getName().contains(leg_move.getCardPlayed().getName()) && card.getName().contains("10")) {
-////                SaboteurMove move = new SaboteurMove(new SaboteurTile("10"), pos[0], pos[1], player_id);
-////                if(move == null){
-////                    System.out.println("GOTVEREN");
-////                }
-////                return move;
-////            }
-////        }
-//        SaboteurMove movee = dropUnusedCard(board,player_id);
-//        if( movee == null){
-//            dropUnusedCard(board,player_id);
-////            return board.getRandomMove();
-//        }
-//        return movee;
-//    }
 
-//    public static SaboteurMove selectTile(SaboteurBoardState board,Pair<Integer,Integer> target,int player_id){
-//        ArrayList<SaboteurMove> legal_moves = board.getAllLegalMoves();
-//
-//        legal_moves.get(0).getPosPlayed();
-//        double prev_distance = 9999999;
-//        ArrayList<SaboteurCard> hand = board.getCurrentPlayerCards();
-//        SaboteurMove currentMove = null;
-//        for(int i = 0 ;i <legal_moves.size(); i++){
-//            int[] pos = legal_moves.get(i).getPosPlayed();
-//            double distance = calcDistance(pos,target);
-//
-//            if(distance < prev_distance){
-//                currentMove = chooseTile(legal_moves.get(i),board,target,hand,player_id);
-////                assert currentMove != null;
-//                prev_distance = distance;
-//            }
-//        }
-//        if(currentMove == null){
-//            System.out.println("GOTVEREN");
-//        }
-//        return currentMove;
-//    }
 
     public static int[][] convertBoard(int [][]intBoard){
         int[][] copyBoard = new int[intBoard.length][intBoard[0].length];
@@ -323,7 +250,7 @@ public class MyTools {
 //        ArrayList<SaboteurCard> hand = board.getCurrentPlayerCards();
 
         ArrayList<SaboteurMove> listOfMoves = A_star_search(board,target,player_id);
-//        System.out.println("PAAAAATHHH     "+listOfMoves.toString());
+        System.out.println("PAAAAATHHH     "+listOfMoves.toString());
         for(SaboteurMove move: listOfMoves){
             System.out.println("MOVEEESSS     "+ move.toPrettyString());
         }

@@ -308,8 +308,8 @@ public class SaboteurBoardState extends BoardState {
                     }
                     if(!isAnHiddenObjective) {
                         int[][] path = this.board[i][j].getPath();
-                        for (int k = 0; i < 3; i++) {
-                            for (int h = 0; i < 3; i++) {
+                        for (int k = 0; k < 3; k++) {
+                            for (int h = 0; h < 3; h++) {
                                 this.intBoard[i * 3 + k][j * 3 + h] = path[h][2-k];
                             }
                         }
@@ -516,7 +516,7 @@ public class SaboteurBoardState extends BoardState {
                 for (int i = 0; i < BOARD_SIZE; i++) {
                     for (int j = 0; j < BOARD_SIZE; j++) { //we can't destroy an empty tile, the starting, or final tiles.
                         if(this.board[i][j] != null && (i!=originPos || j!= originPos) && (i != hiddenPos[0][0] || j!=hiddenPos[0][1] )
-                           && (i != hiddenPos[1][0] || j!=hiddenPos[1][1] ) && (i != hiddenPos[2][0] || j!=hiddenPos[2][1] ) ){
+                                && (i != hiddenPos[1][0] || j!=hiddenPos[1][1] ) && (i != hiddenPos[2][0] || j!=hiddenPos[2][1] ) ){
                             legalMoves.add(new SaboteurMove(card,i,j,turnPlayer));
                         }
                     }
@@ -825,7 +825,6 @@ public class SaboteurBoardState extends BoardState {
             For each hidden objectives:
                 We verify there is a path of cards between the start and the hidden objectives.
                     If there is one, we do the same but with the 0-1s matrix!
-
             To verify a path, we use a simple search algorithm where we propagate a front of visited neighbor.
                TODO To speed up: The neighbor are added ranked on their distance to the origin... (simply use a PriorityQueue with a Comparator)
         */
@@ -921,22 +920,6 @@ public class SaboteurBoardState extends BoardState {
         }
         return boardString.toString();
     }
-//    public String toString() {
-//        this.getIntBoard();
-//        StringBuilder boardString = new StringBuilder();
-//        for (int i = 0; i < BOARD_SIZE*3; i++) {
-//            boardString.append("{");
-//            for (int j = 0; j < BOARD_SIZE*3; j++) {
-//                boardString.append(intBoard[i][j]);
-//                if(j<BOARD_SIZE*3-1){
-//                    boardString.append(",");
-//                }
-//
-//            }
-//            boardString.append("},\n");
-//        }
-//        return boardString.toString();
-//    }
 
     public static void main(String[] args) {
         SaboteurBoardState pbs = new SaboteurBoardState();
