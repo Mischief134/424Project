@@ -119,6 +119,45 @@ public class MyTools {
         return r.nextInt((max - min) + 1) + min;
     }
 
+    public static SaboteurMove useDestroy(SaboteurBoardState board, int player_id){
+        ArrayList<String> droppable = new ArrayList<String>(Arrays.asList("Tile:1","Tile:2","Tile:3","Tile:4","Tile:2_flip",
+                "Tile:3_flip","Tile:4_flip","Tile:11","Tile:11_flip","Tile:12","Tile:12_flip","Tile:13",
+                "Tile:14","Tile:14_flip","Tile:15"));
+        SaboteurTile[][] board_val = board.getHiddenBoard();
+        for(int i = 0; i<board_val.length; i++){
+            for(int j = 0 ; j<board_val[0].length;j++){
+                if(board_val[i][j]!= null){
+                   if(droppable.contains(board_val[i][j].getName())){
+                       SaboteurMove destroy = new SaboteurMove(new SaboteurDestroy(),i,j,player_id);
+                       return destroy;
+                   }
+                }
+
+
+
+            }
+        }
+        return null;
+
+
+    }
+    public static boolean multipleBonuses(SaboteurBoardState board){
+        ArrayList<SaboteurCard> hand = board.getCurrentPlayerCards();
+        int count = 0;
+        for(SaboteurCard card : hand) {
+            if (card instanceof SaboteurBonus){
+
+                count++;
+
+
+            }
+        }
+        if(count>1){
+            return true;
+        }
+        return false;
+
+    }
 
     public static SaboteurMove dropUnusedCard(SaboteurBoardState board, int player_id){
         ArrayList<String> droppable = new ArrayList<String>(Arrays.asList("Tile:1","Tile:2","Tile:3","Tile:4","Tile:2_flip",
@@ -129,18 +168,18 @@ public class MyTools {
         for(SaboteurCard card : hand){
             String card_str = card.getName();
             boolean val = droppable.contains(card_str);
-            if (card instanceof SaboteurDestroy){
-//                board.processMove(mapMove);
-                val = true;
-            }
-//            if (card instanceof SaboteurMalus){
-////
+//            if (card instanceof SaboteurDestroy){
+//
 //                val = true;
 //            }
-            if (card instanceof SaboteurBonus){
-//                board.processMove(mapMove);
+            if (multipleBonuses(board)){
+//
                 val = true;
             }
+//            if (card instanceof SaboteurBonus){
+////                board.processMove(mapMove);
+//                val = true;
+//            }
             if (card instanceof SaboteurMap){
 //                board.processMove(mapMove);
                 if(nuggetExists(board)){
@@ -302,6 +341,11 @@ public class MyTools {
                 int[] posLegal = legal_moves.get(j).getPosPlayed();
                 int[] posPlayable = listOfMoves.get(i).getPosPlayed();
 
+                SaboteurMove malus = new SaboteurMove(new SaboteurMalus(), 0 ,0, player_id);
+                if(malus.toPrettyString().equals(legal_moves.get(j).toPrettyString())){
+
+                    return malus;
+                }
                 if(legal_moves.get(j).toPrettyString().equals(listOfMoves.get(i).toPrettyString())){
                     return listOfMoves.get(i);
                 }
@@ -309,10 +353,24 @@ public class MyTools {
 //                if(playable_move_name.equals(legal_move_name)&& posLegal[0]==posPlayable[0] && posLegal[1]==posPlayable[1]){
 //                    return listOfMoves.get(i);
 //                }
-                SaboteurMove malus = new SaboteurMove(new SaboteurMalus(), 0 ,0, player_id);
-                if(malus.getCardPlayed().getName().equals(legal_move_name)){
-                    return malus;
+                if(board.getNbMalus(player_id)==1){
+                    SaboteurMove bonus = new SaboteurMove(new SaboteurBonus(), 0 ,0, player_id);
+                    if(bonus.toPrettyString().equals(legal_moves.get(j).toPrettyString())){
+                        return bonus;
+                    }
+
                 }
+                SaboteurMove destroy =useDestroy(board,player_id);
+                if(destroy!=null){
+                    if(destroy.toPrettyString().equals(legal_moves.get(j).toPrettyString())){
+                        return destroy;
+                    }
+                }
+
+
+
+
+
             }
         }
         return dropUnusedCard(board,player_id);
